@@ -1,0 +1,93 @@
+// Подключение шрифтов
+
+// Сброс стандартных стилей 
+*, *:before, *:after 
+  box-sizing: border-box
+
+h1, h2, h3, h4, h5, h6, p, i 
+  margin: 0
+
+// Контейнер центровщик
+.container
+    max-width: 1170px
+    padding: 0 15px
+    margin: 0 auto
+
+// Стили
+.team
+    background-color: #F3F3F3
+    &__wrap
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-top: 40px
+    &__title 
+        position: relative
+        font-family: Gotham, sens-serif
+        font-style: normal
+        font-weight: 700
+        font-size: 30px
+        text-transform: uppercase
+        margin-bottom: 53px
+        &::after
+            content: ""
+            display: block
+            position: absolute
+            width: 185px
+            height: 3px 
+            left: 50%
+            bottom: -20px
+            margin-left: -92px
+            background-color: #000000
+    &__text
+        font-family: "ProximaNova", sans-serif
+        text-align: center
+        line-height: 25px
+        max-width: 536px
+        margin-bottom: 58px
+    &__card 
+        margin-bottom: 80px
+       
+    
+.card 
+    display: flex
+    &__item
+        width: 210px
+        height: 210px
+        padding: 19px
+        text-align: center
+        background-color: #fff
+        &:not(:last-child)
+            margin-right: 20px
+    &__img
+        border: 3px solid #fff
+        border-radius: 100%
+        box-shadow: 0px 2px 6px 0 rgba(0, 1, 1, 0.75)
+        margin-bottom: 10px
+    &__title 
+        font-family: Gotham, sans-serif
+        font-size: 16px
+        font-style: normal
+        font-weight: 700
+        text-transform: uppercase
+        margin-bottom: 8px
+    &__sub 
+        font-family: Georgia, serif
+        font-size: 12px
+        font-style: italic
+        font-weight: 400
+        margin-bottom: 15px
+    &__social 
+        display: flex
+        justify-content: center
+        &:not(:last-child)
+            margin-right: 20px
+    &__icon 
+        width: 15px
+        height: 15px
+        fill: #7F7F7F
+        &:not(:last-child)
+            margin-right: 20px
+        &:hover
+            fill: #ff3737
+              
